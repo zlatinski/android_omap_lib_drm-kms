@@ -1,0 +1,6 @@
+[submodule "libdrm"]
+	path = libdrm
+	url = ./libdrm
+[submodule "gralloc"]
+	path = gralloc
+	url = ./gralloc
