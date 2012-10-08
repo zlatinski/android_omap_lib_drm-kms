@@ -1,0 +1,40 @@
+on early-boot
+
+# on boot
+
+# OMAP DSS
+	insmod /system/lib/modules/omapdss.ko
+
+# Panel Drivers
+        insmod /system/lib/modules/panel-generic-dpi.ko
+        insmod /system/lib/modules/panel-n8x0.ko
+        insmod /system/lib/modules/panel-dvi.ko
+        insmod /system/lib/modules/panel-taal.ko
+        insmod /system/lib/modules/panel-picodlp.ko
+        insmod /system/lib/modules/panel-tpo-td043mtea1.ko
+        insmod /system/lib/modules/panel-nec-nl8048hl11-01b.ko
+        insmod /system/lib/modules/panel-sharp-ls037v7dw01.ko
+        insmod /system/lib/modules/panel-lg4591.ko
+        insmod /system/lib/modules/panel-lgphilips-lb035q02.ko
+	insmod /system/lib/modules/panel-tc358765.ko
+
+# Sound Mixer PCM HDMI
+	insmod /system/lib/modules/snd-mixer-oss.ko
+	insmod /system/lib/modules/snd-pcm-oss.ko
+
+	insmod /system/lib/modules/snd-soc-omap-hdmi-codec.ko
+	insmod /system/lib/modules/snd-soc-omap-hdmi.ko
+	insmod /system/lib/modules/snd-soc-omap-hdmi-card.ko
+
+# HDMI CEC KB
+	insmod /system/lib/modules/cec_keyboard.ko
+
+# OMAP DRM
+	insmod /system/lib/modules/drm_kms_helper.ko
+	insmod /system/lib/modules/fb_sys_fops.ko
+	insmod /system/lib/modules/syscopyarea.ko
+	insmod /system/lib/modules/sysfillrect.ko
+	insmod /system/lib/modules/sysimgblt.ko
+        insmod /system/lib/modules/omapdrm.ko
+
+
